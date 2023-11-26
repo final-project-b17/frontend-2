@@ -2,14 +2,13 @@ import { Search } from "lucide-react";
 import Main from "../../components/MyCourseComponent/Main";
 import SideFilter from "../../components/MyCourseComponent/SideFilter";
 
-const CoursePage = () => {
-  const data = ["All", "Kelas Premium", "Kelas Gratis"];
-
+const MyCoursePage = () => {
+  const data = ["All", "In Progress", "Done"];
   return (
     <div className="w-full bg-layer pt-10">
       <div className="w-10/12 mx-auto">
         <div className="flex items-center justify-between">
-          <h1 className="font-bold text-sm  md:text-2xl">Topik Kelas</h1>
+          <h1 className="font-bold text-sm  md:text-2xl">Kelas Berjalan</h1>
           <div className="md:w-3/12">
             <form className="relative w-full">
               <input
@@ -40,4 +39,4 @@ const CoursePage = () => {
   );
 };
 
-export default CoursePage;
+export default MyCoursePage;
