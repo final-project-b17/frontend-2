@@ -1,8 +1,8 @@
 import { BadgeCheck } from "lucide-react";
 import { useState } from "react";
 
-export default function Progressbar() {
-  const [percentage] = useState(12);
+export default function ProgressBar() {
+  const [percentage] = useState(50);
 
   // useEffect(() => {
   //   if (percentage < 99) {
@@ -19,7 +19,7 @@ export default function Progressbar() {
           <BadgeCheck size={20} />
         </span>
       </div>
-      <div className="w-7/12 relative overflow-hidden h-5 rounded-full bg-slate-300">
+      <div className="w-9/12 relative overflow-hidden h-5 rounded-full bg-slate-300">
         <div
           style={{
             height: "100%",
@@ -27,7 +27,7 @@ export default function Progressbar() {
             backgroundColor: "purple",
             transition: "width 0.5s",
           }}
-          className="animate-fade "
+          className="animate-fade"
         ></div>
         <span className="font-semibold absolute top-[50%] left-3 -translate-y-[50%] text-white text-xs drop-shadow-lg progressPercent">
           {percentage}% Complete
