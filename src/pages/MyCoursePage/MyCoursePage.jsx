@@ -3,6 +3,7 @@ import Main from "../../components/MyCourseComponent/Main";
 import SideFilter from "../../components/MyCourseComponent/SideFilter";
 
 const MyCoursePage = () => {
+  const data = ["All", "In Progress", "Done"];
   return (
     <div className="w-full bg-layer pt-10">
       <div className="w-10/12 mx-auto">
@@ -29,7 +30,7 @@ const MyCoursePage = () => {
               <SideFilter />
             </div>
             <div className="col-span-3 md:col-span-2">
-              <Main />
+              <Main data={data} />
             </div>
           </div>
         </div>

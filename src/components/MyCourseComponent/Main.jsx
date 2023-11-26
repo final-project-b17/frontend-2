@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { cn } from "../../libs/utils";
 import Card from "./Card";
+import PropTypes from "prop-types";
 
-const data = ["All", "In Progress", "Done"];
 const data2 = [
   "All",
   "In Progress",
@@ -21,7 +21,7 @@ const data2 = [
   "Done",
 ];
 
-const Main = () => {
+const Main = ({ data }) => {
   const [flag, setFlag] = useState(0);
   return (
     <div>
@@ -52,6 +52,10 @@ const Main = () => {
       </div>
     </div>
   );
+};
+
+Main.propTypes = {
+  data: PropTypes.array,
 };
 
 export default Main;
